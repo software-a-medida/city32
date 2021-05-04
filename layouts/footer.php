@@ -3,7 +3,7 @@
         <footer class="p-40" style="background-color:#000;">
             <div class="container">
                 <div class="row m-b-20 m-b-md-40">
-                    <div class="col-md-4 m-b-20 m-b-md-0">
+                    <div class="col-md-3 m-b-20 m-b-md-0">
                         <h6 class="m-b-5 text-uppercase text-light">{$lang.contact}</h6>
                         <nav class="m-b-20">
                             <ul class="list-unstyled">
@@ -20,10 +20,11 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-4 m-b-20 m-b-md-0">
+                    <div class="col-md-3 m-b-20 m-b-md-0">
                         <h6 class="m-b-5 text-uppercase text-light">{$lang.website}</h6>
                         <nav>
                             <ul class="list-unstyled">
+                                <li class="m-b-5"><a href="/" class="text-light">{$lang.home}</a></li>
                                 <li class="m-b-5"><a href="/shop" class="text-light">{$lang.shop}</a></li>
             					<li class="m-b-5"><a href="/care" class="text-light">{$lang.care}</a></li>
             					<li class="m-b-5"><a href="/stay" class="text-light">{$lang.stay}</a></li>
@@ -36,7 +37,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                         <figure>
                             <img src="{$path.images}logotype_white.svg" alt="Logotype" class="img-fluid">
                         </figure>

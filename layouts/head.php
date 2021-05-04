@@ -51,7 +51,8 @@
 				<div class="container">
 					<nav>
 						<ul class="d-flex align-items-center justify-content-center list-unstyled">
-							<li class="m-r-15"><a href="/shop" class="text-uppercase text-dark">{$lang.shop}</a></li>
+							<li class="m-r-15"><a href="/" class="text-uppercase text-dark">{$lang.home}</a></li>
+							<li class="m-l-15 m-r-15"><a href="/shop" class="text-uppercase text-dark">{$lang.shop}</a></li>
 							<li class="m-l-15 m-r-15"><a href="/care" class="text-uppercase text-dark">{$lang.care}</a></li>
 							<li class="m-l-15 m-r-15"><a href="/stay" class="text-uppercase text-dark">{$lang.stay}</a></li>
 							<li class="m-l-15 m-r-15"><a href="/entertain" class="text-uppercase text-dark">{$lang.entertain}</a></li>
@@ -76,11 +77,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="p-5" style="background-color:#000;">
+				<p class="text-center text-light">{$lang.coming_soon}</p>
+			</div>
 		</header>
 		<header id="mobile_menu" data-mobile-flex class="pos-fixed d-flex align-items-center justify-content-center p-20" style="width:300px;height:100vh;right:-300px;background-color:#fff;transition:400ms;z-index:99;">
 			<a data-action="close_mobile_menu" class="btn btn-light pos-absolute" style="top:20px;right:20px;"><i class="fas fa-times"></i></a>
 			<nav>
 				<ul class="d-flex align-items-center flex-column list-unstyled">
+					<li class="m-b-15"><a href="/" class="text-uppercase text-dark">{$lang.home}</a></li>
 					<li class="m-b-15"><a href="/shop" class="text-uppercase text-dark">{$lang.shop}</a></li>
 					<li class="m-b-15"><a href="/care" class="text-uppercase text-dark">{$lang.care}</a></li>
 					<li class="m-b-15"><a href="/stay" class="text-uppercase text-dark">{$lang.stay}</a></li>
