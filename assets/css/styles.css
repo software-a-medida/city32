@@ -119,4 +119,8 @@ body * {
     #mobile_menu.open {
         right: 0px !important;
     }
+
+    #map {
+        padding-top: 150px !important;
+    }
 }
