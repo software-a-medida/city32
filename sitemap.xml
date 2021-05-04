@@ -7,7 +7,52 @@
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://mycompany.com/aviso-de-privacidad</loc>
+        <loc>https://mycompany.com/shop</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/care</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/stay</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/entertain</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/taste</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/work</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/events</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/contact</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/map</loc>
+        <changefreq>yearly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://mycompany.com/privacy-notice</loc>
         <changefreq>yearly</changefreq>
         <priority>1.00</priority>
     </url>

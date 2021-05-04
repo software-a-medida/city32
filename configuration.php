@@ -19,7 +19,7 @@ class Configuration
 	 *
      * @var string $domain
      */
-	public static $domain = 'mycompany.com';
+	public static $domain = 'city32.mx';
 
 	/**
      * Nombre del sitio web.
@@ -28,7 +28,7 @@ class Configuration
 	 *
      * @var string $web_page
      */
-	public static $web_page = 'My Company';
+	public static $web_page = 'City 32';
 
 	/**
      * Idioma por default
@@ -278,7 +278,7 @@ class Configuration
 	 *
      * @var integer $smtp_emailer
      */
-	public static $smtp_emailer = 'noreply@mycompany.com';
+	public static $smtp_emailer = 'noreply@city32.mx';
 
 	/**
      * Variables generales.
@@ -289,13 +289,13 @@ class Configuration
      */
 	public static $vars = [
 		'contact' => [
-			'email' => 'contacto@mycompany.com',
-			'phone' => '+52 (998) 123 45 67'
+			'email' => 'hola@city32.mx',
+			'phone' => '+52 (999) 946 72 88'
 		],
 		'rrss' => [
 			'whatsapp' => [
-				'url' => 'https://api.whatsapp.com/send?phone=+529981234567',
-				'user' => '+52 (998) 123 45 67'
+				'url' => 'https://api.whatsapp.com/send?phone=+529999467288',
+				'user' => '+52 (999) 946 72 88'
 			],
 			'facebook' => [
 				'url' => 'https://facebook.com/',

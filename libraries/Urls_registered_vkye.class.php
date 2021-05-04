@@ -13,7 +13,43 @@ class Urls_registered_vkye
                 'controller' => 'Index',
                 'method' => 'index'
             ],
-            '/aviso-de-privacidad' => [
+            '/shop' => [
+                'controller' => 'Index',
+                'method' => 'shop'
+            ],
+            '/care' => [
+                'controller' => 'Index',
+                'method' => 'care'
+            ],
+            '/stay' => [
+                'controller' => 'Index',
+                'method' => 'stay'
+            ],
+            '/entrertain' => [
+                'controller' => 'Index',
+                'method' => 'entrertain'
+            ],
+            '/taste' => [
+                'controller' => 'Index',
+                'method' => 'taste'
+            ],
+            '/work' => [
+                'controller' => 'Index',
+                'method' => 'work'
+            ],
+            '/events' => [
+                'controller' => 'Index',
+                'method' => 'events'
+            ],
+            '/contact' => [
+                'controller' => 'Index',
+                'method' => 'contact'
+            ],
+            '/map' => [
+                'controller' => 'Index',
+                'method' => 'map'
+            ],
+            '/privacy-notice' => [
                 'controller' => 'Index',
                 'method' => 'privacy_notice'
             ]
