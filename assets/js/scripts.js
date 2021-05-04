@@ -1,53 +1,54 @@
-"use strict";
+'use strict';
 
-!function ( $ )
+$(window).on('beforeunload ajaxStart', function()
 {
-    "use strict"
+    $('body').prepend('<div data-ajax-loader><div class="loader"></div></div>');
+});
 
-    const app = function () {}
+$(window).on('ajaxStop', function()
+{
+    $('body').find('[data-ajax-loader]').remove();
+});
 
-    app.prototype.onResize = function ()
+$(document).ready(function ()
+{
+    nav_scroll_down('#desktop_menu', 'down', 0);
+
+    $('[data-action="open_mobile_menu"]').on('click', function()
     {
-        window.addEventListener('resize', function ( e )
+        $('#mobile_menu').addClass('open');
+    });
+
+    $(document).on('click', '[data-action="close_mobile_menu"], #mobile_menu > nav > ul > li > a', function()
+    {
+        $('#mobile_menu').removeClass('open');
+    });
+});
+
+function nav_scroll_down(target, css, height)
+{
+    var nav = {
+
+        initialize: function()
         {
-            window.requestAnimationFrame(function ()
+            $(document).each(function()
             {
-                $('body').css({
-                    'padding-bottom': $('footer.main-footer').height()
-                });
-            })
-        })
-    },
+                nav.scroller()
+            });
 
-    app.prototype.test = function ()
-    {
-    },
-
-    app.prototype.init = function ()
-    {
-        $('header.main-header .topbar-navigation nav.main-menu li.list-inline-item:has( > .megamenu),header.main-header .topbar-navigation nav.main-menu li.list-inline-item:has( > .submenu)').addClass('angle-down');
-
-        $( document ).on('click', '#trigger-nav-mobile', function ( event )
+            $(document).on('scroll', function()
+            {
+                nav.scroller()
+            });
+        },
+        scroller: function()
         {
-            event.stopPropagation()
-
-            $(this).find('> .hamburger-menu').toggleClass('animate');
-            $('body').toggleClass('mobile-menu-open');
-        });
-
-        $('body').css({
-            'padding-bottom': $('footer.main-footer').height()
-        });
-
-        this.test()
-        this.onResize()
+            if ($(document).scrollTop() > height)
+                $(target).addClass(css);
+            else
+                $(target).removeClass(css);
+        }
     }
 
-    $.app = new app
-    $.app.Constructor = app
-}( window.jQuery ),
-
-function ( $ )
-{
-    $.app.init()
-}( window.jQuery )
+    nav.initialize();
+}

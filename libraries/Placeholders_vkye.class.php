@@ -1,4 +1,5 @@
 <?php
+
 defined('_EXEC') or die;
 
 class Placeholders_vkye
@@ -14,13 +15,6 @@ class Placeholders_vkye
 
     public function run()
     {
-        $this->buffer = $this->include_main_header();
-
         return $this->buffer;
-    }
-
-    private function include_main_header()
-    {
-        return $this->format->include_file( $this->buffer, 'main-header' );
     }
 }

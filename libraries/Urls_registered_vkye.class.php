@@ -1,15 +1,4 @@
 <?php
-/**
- *
- * @package Valkyrie.Platform.Libraries
- *
- * @since 2.0.0
- * @version 1.0.0
- * @license You can see LICENSE.txt
- *
- * @author David Miguel Gómez Macías < davidgomezmacias@gmail.com >
- * @copyright Copyright (C) CodeMonkey - Valkyrie Platform. All Rights Reserved.
- */
 
 defined('_EXEC') or die;
 
@@ -21,37 +10,13 @@ class Urls_registered_vkye
     {
         return [
             '/' => [
-                'controller' => 'Pages',
-                'method' => 'shop'
+                'controller' => 'Index',
+                'method' => 'index'
             ],
-            '/entertain' => [
-                'controller' => 'Pages',
-                'method' => 'entertain'
-            ],
-            '/taste' => [
-                'controller' => 'Pages',
-                'method' => 'taste'
-            ],
-            '/work' => [
-                'controller' => 'Pages',
-                'method' => 'work'
-            ],
-
-            '/iniciar-sesion' => [
-                'controller' => 'Users',
-                'method' => 'login',
-                'onSession' => 'hidden'
-            ],
-            '/registrarme' => [
-                'controller' => 'Users',
-                'method' => 'register',
-                'onSession' => 'hidden'
-            ],
-            '/logout' => [
-                'controller' => 'Users',
-                'method' => 'logout',
-                'private' => true
-            ],
+            '/aviso-de-privacidad' => [
+                'controller' => 'Index',
+                'method' => 'privacy_notice'
+            ]
         ];
     }
 }

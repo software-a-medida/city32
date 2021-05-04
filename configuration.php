@@ -1,4 +1,5 @@
 <?php
+
 defined('_EXEC') or die;
 
 /**
@@ -8,6 +9,7 @@ defined('_EXEC') or die;
  * @since 1.0.0
  * @version 1.0.0
  */
+
 class Configuration
 {
 	/**
@@ -17,7 +19,7 @@ class Configuration
 	 *
      * @var string $domain
      */
-	public static $domain = 'local.domain.com';
+	public static $domain = 'mycompany.com';
 
 	/**
      * Nombre del sitio web.
@@ -26,7 +28,7 @@ class Configuration
 	 *
      * @var string $web_page
      */
-	public static $web_page = 'Name proyect';
+	public static $web_page = 'My Company';
 
 	/**
      * Idioma por default
@@ -100,7 +102,7 @@ class Configuration
 	 *
      * @var string $secret
      */
-	public static $secret = '';  //CHANGE PRIVATE SECRET PASSWORD
+	public static $secret = 'F-7^m;x+h]6Kab5@bOy6hk0Te';
 
 	/**
      * Tiempo de vida para una session en bytes.
@@ -137,7 +139,7 @@ class Configuration
 	 *
      * @var string $db_host
      */
-	public static $db_host = 'localhost';
+	public static $db_host = '';
 
 	/**
      * Nombre de la base de datos
@@ -258,7 +260,7 @@ class Configuration
 	 *
      * @var string $smtp_secure
      */
-	public static $smtp_secure = 'tls';
+	public static $smtp_secure = 'ssl';
 
 	/**
      * Puerto de conexion al servidor SMTP.
@@ -267,5 +269,42 @@ class Configuration
 	 *
      * @var integer $smtp_port
      */
-	public static $smtp_port = 25;
+	public static $smtp_port = 465;
+
+	/**
+     * Correo electrónico de emailing.
+	 *
+	 * @static
+	 *
+     * @var integer $smtp_emailer
+     */
+	public static $smtp_emailer = 'noreply@mycompany.com';
+
+	/**
+     * Variables generales.
+	 *
+	 * @static
+	 *
+     * @var array $vars
+     */
+	public static $vars = [
+		'contact' => [
+			'email' => 'contacto@mycompany.com',
+			'phone' => '+52 (998) 123 45 67'
+		],
+		'rrss' => [
+			'whatsapp' => [
+				'url' => 'https://api.whatsapp.com/send?phone=+529981234567',
+				'user' => '+52 (998) 123 45 67'
+			],
+			'facebook' => [
+				'url' => 'https://facebook.com/',
+				'user' => '@myfacebook'
+			],
+			'instagram' => [
+				'url' => 'https://instagram.com/',
+				'user' => '@myinstagram'
+			]
+		]
+	];
 }
