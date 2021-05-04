@@ -305,6 +305,7 @@ class Configuration
 				'url' => 'https://instagram.com/',
 				'user' => '@myinstagram'
 			]
-		]
+		],
+		'address' => 'Av. Andres García Lavín por Periférico norte, Mérida, Yucatán, México'
 	];
 }

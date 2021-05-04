@@ -4,14 +4,14 @@
             <div class="container">
                 <div class="row m-b-20 m-b-md-40">
                     <div class="col-md-4 m-b-20 m-b-md-0">
-                        <h6 class="m-b-5 text-uppercase text-light">{$lang.contact_us}</h6>
+                        <h6 class="m-b-5 text-uppercase text-light">{$lang.contact}</h6>
                         <nav class="m-b-20">
                             <ul class="list-unstyled">
                                 <li class="m-b-5"><a href="mailto:<?php echo Configuration::$vars['contact']['email']; ?>" target="_blank" class="text-light"><i class="fas fa-envelope m-r-5"></i><?php echo Configuration::$vars['contact']['email']; ?></a></li>
                                 <li><a href="tel:<?php echo Configuration::$vars['contact']['phone']; ?>" target="_blank" class="text-light"><i class="fas fa-phone m-r-5"></i><?php echo Configuration::$vars['contact']['phone']; ?></a></li>
                             </ul>
                         </nav>
-                        <h6 class="m-b-5 text-uppercase text-light">{$lang.follow_us}</h6>
+                        <h6 class="m-b-5 text-uppercase text-light">{$lang.rrss}</h6>
                         <nav>
                             <ul class="list-unstyled">
                                 <li class="m-b-5"><a href="<?php echo Configuration::$vars['rrss']['whatsapp']['url']; ?>" target="_blank" class="text-light"><i class="fab fa-whatsapp m-r-5"></i><?php echo Configuration::$vars['rrss']['whatsapp']['user']; ?></a></li>
@@ -21,22 +21,28 @@
                         </nav>
                     </div>
                     <div class="col-md-4 m-b-20 m-b-md-0">
-                        <h6 class="m-b-5 text-uppercase text-light"><?php echo Configuration::$web_page; ?></h6>
+                        <h6 class="m-b-5 text-uppercase text-light">{$lang.website}</h6>
                         <nav>
                             <ul class="list-unstyled">
-                                <li class="m-b-5"><a href="/" class="text-light">{$lang.home}</a></li>
-                                <li class="m-b-5"><a href="#contactanos" class="text-light">{$lang.contact_us}</a></li>
+                                <li class="m-b-5"><a href="/shop" class="text-light">{$lang.shop}</a></li>
+            					<li class="m-b-5"><a href="/care" class="text-light">{$lang.care}</a></li>
+            					<li class="m-b-5"><a href="/stay" class="text-light">{$lang.stay}</a></li>
+            					<li class="m-b-5"><a href="/entertain" class="text-light">{$lang.entertain}</a></li>
+            					<li class="m-b-5"><a href="/taste" class="text-light">{$lang.taste}</a></li>
+            					<li class="m-b-5"><a href="/work" class="text-light">{$lang.work}</a></li>
+            					<li class="m-b-5"><a href="/events" class="text-light">{$lang.events}</a></li>
+            					<li class="m-b-5"><a href="/contact" class="text-light">{$lang.contact}</a></li>
                                 <li><a href="/aviso-de-privacidad" class="text-light">{$lang.privacy_notice}</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
                         <figure>
-                            <img src="{$path.images}logotype.png" alt="Logotype" class="img-fluid">
+                            <img src="{$path.images}logotype_white.svg" alt="Logotype" class="img-fluid">
                         </figure>
                     </div>
                 </div>
-                <p class="text-light">Copyright © 2021 <strong><?php echo Configuration::$web_page; ?></strong> <i data-desktop class="fas fa-heart" style="color:#f44336;"></i><br data-mobile-block> {$lang.website} {$lang.design_by} <a href="https://designcompany.com" target="_blank" class="text-light"><strong>Design Company</strong></a> <br data-mobile-block> & {$lang.development_by} <a href="https://codemonkey.com.mx" target="_blank" class="text-light"><strong>Code Monkey</strong></a></p>
+                <p class="text-light">Copyright © 2021 <strong><?php echo Configuration::$web_page; ?></strong> <i data-desktop class="fas fa-heart" style="color:#f44336;"></i><br data-mobile-block> {$lang.website} {$lang.design_by} <a href="mailto:jmafud@temasoluciona.mx" target="_blank" class="text-light"><strong>Tema Soluciona</strong></a> <br data-mobile-block> & {$lang.development_by} <a href="https://codemonkey.com.mx" target="_blank" class="text-light"><strong>Code Monkey</strong></a></p>
             </div>
         </footer>
         <script src="{$path.js}jquery-3.4.1.min.js"></script>
